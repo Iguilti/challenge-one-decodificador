@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+:root {
+    --bg-color: #edecec;
+    --text-color: #2f2f2f;
+    --border-color: #edecec;
+    --box-shadow-style: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.dark-theme:root {
+    --bg-color: #060606;
+    --text-color: #edecec;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

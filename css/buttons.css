@@ -1,0 +1,52 @@
+
+.button {
+    color: #edecec;
+    position: relative;
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button--one {
+    background-color: darkviolet;
+    bottom: 5px;
+}
+
+.button--two {
+    background-color: darkcyan;
+    bottom: 5px;
+}
+
+.button--three {
+    background-color: red;    
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .button {
+        width: 150px;
+        font-size: 14px;
+        margin: 10px 0 20px;
+    }
+    .button--one, .button--two {
+        bottom: 0;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1010px) {
+    .button {
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    .button--one, .button--two {
+        bottom: 15px;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/areaoculta.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Decodificador - Challenge Alura & Oracle</title>
+</head>
+<body>
+    <header>
+        <div class="theme-mode">
+            <span class="light-mode" id="light-mode">Light Mode</span>
+            <span class="dark-mode" id="dark-mode">Dark Mode</span>
+            <input type="checkbox" name="switcher" id="switcher">
+        </div>
+        <nav class="navbar">
+            <a href="https://alura.com.br" target="_blank"><img class="navbar__logo1" src="img/alura-logo-nobg.png"></a>
+            <a href="https://oracle.com" target="_blank"><img class="navbar__logo2" src="img/oracle-logo.png"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="principal">
+            <div class="principal__textarea">
+                <h1>Digite seu texto:</h1>
+                <textarea id="textAreaOne"></textarea>
+                <p><span>Atenção:</span> Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="principal__buttons">
+                <button class="button button--one" onclick="btnCriptografar()">Criptografar</button>
+                <button class="button button--two" onclick="btnDescriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <aside class="sidebar" id="areaAtual">
+            <div class="sidebar__cartoon">
+                <img src="img/hero-image.png">
+            </div>
+            <div class="sidebar__message">
+                <h2>Nenhuma mensagem encontrada</h2><br>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </aside>
+        <div class="areaOculta" id="areaOculta">
+            <textarea id="textAreaTwo" readonly></textarea>
+            <button class="button button--three" onclick="copiarTexto()">Copiar</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer__createdby">
+            <h3>Created by: <span>Igor Gurgel</span></h3> 
+        </div>
+        <div class="footer__social">
+            <a href="https://github.com/iguilti" target="_blank"><img src="img/github.svg"></a>
+            <a href="https://linkedin.com/in/igorgurgel" target="_blank"><img src="img/linkedin.svg"></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/areaOculta.js"></script>
+    <script src="js/copiarTexto.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.theme-mode {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 14.3px;
+    font-weight: 900;
+}
+
+.theme-mode input {
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/169/169367.png');
+    background-size: cover;
+    transition: 500ms linear;
+}
+
+.theme-mode input:checked {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/196/196685.png');
+    background-size: cover;
+    margin-right: 12px;
+}
+
+.dark-mode {
+    display: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    .theme-mode {
+        gap: 4px;
+        padding: 3px 7px;
+        font-size: 12px;
+    }
+
+    .theme-mode input {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .theme-mode {
+        gap: 5px;
+        padding: 3px 8px;
+        font-size: 13px;
+    }
+
+    .theme-mode input {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.navbar__logo1 {
+    width: 70px;
+}
+
+.navbar__logo2 {
+    width: 95px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    .navbar__logo1 {
+        width: 50px;
+    }
+
+    .navbar__logo2 {
+        width: 70px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .navbar__logo1 {
+        width: 60px;
+    }
+
+    .navbar__logo2 {
+        width: 80px;
+    }
+}
