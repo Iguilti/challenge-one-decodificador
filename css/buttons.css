@@ -8,6 +8,13 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.button {
+    padding: 19px;
+    opacity: 1;
 }
 
 .button--one {
