@@ -12,7 +12,7 @@
     opacity: 0.9;
 }
 
-.button:hover {
+button:hover {
     padding: 19px;
     opacity: 1;
 }
