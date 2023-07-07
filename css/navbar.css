@@ -18,6 +18,10 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 600px) {
+    .navbar {
+        margin-top: -25px;
+    }
+
     .navbar__logo1 {
         width: 50px;
     }
@@ -28,6 +32,10 @@
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
+    .navbar {
+        margin-top: -30px;
+    }
+
     .navbar__logo1 {
         width: 60px;
     }
