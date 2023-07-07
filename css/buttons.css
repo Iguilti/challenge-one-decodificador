@@ -10,10 +10,11 @@
     text-transform: uppercase;
     cursor: pointer;
     opacity: 0.9;
+    transition: 200ms ease-in-out;
 }
 
 button:hover {
-    padding: 19px;
+    font-size: 18.4px;
     opacity: 1;
 }
 
